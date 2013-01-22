@@ -53,6 +53,7 @@
 
 .row-fraction {
 	margin-left: 0;
+	clear: both;
 	.full, .half, [class*="third"], [class*="quarter"], [class*="fifth"], [class*="sixth"] {
 		float: left;
 	}
@@ -76,13 +77,21 @@
 	}
 }
 @media (max-width: 480px) {
-	.row-mobile {
+	.row-phone {
 		.full, .half, [class*="third"], [class*="quarter"], [class*="fifth"], [class*="sixth"] {
 			width: 100%;
 		}
 	}
 }
 @media (max-width: 767px) {
+	.row-adaptive {
+		.full, .half, [class*="third"] {
+			width: 100%;
+		}
+		[class*="quarter"], [class*="fifth"], [class*="sixth"] {
+			width: 50%;
+		}
+	}
 	.row-tablet {
 		.full, .half, [class*="third"], [class*="quarter"], [class*="fifth"], [class*="sixth"] {
 			width: 100%;
